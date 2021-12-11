@@ -371,6 +371,187 @@ body {
     color: purple;
   }
 
+  @-webkit-keyframes fadeIn {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .about .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+  }
+  
+  .about .image img {
+    width: 100%;
+    height: 70rem;
+  }
+  
+  .about .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    padding: 3rem;
+    background: #fff;
+  }
+  
+  .about .content h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .about .content p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+
+  .about .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+    background-color: purple;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    color: #333;
+  }
+  
+  .heading span {
+    color: pink;
+  }
+  
+
+  .faq .accordion-container {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  
+  .faq .accordion-container .accordion {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .faq .accordion-container .accordion:last-child {
+    margin-bottom: .5rem;
+  }
+  
+  .faq .accordion-container .accordion.active .accordion-heading {
+    background: pink;
+  }
+  
+  .faq .accordion-container .accordion.active .accordion-heading i {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  
+  .faq .accordion-container .accordion.active .accordioin-content {
+    display: block;
+  }
+  
+  .faq .accordion-container .accordion .accordion-heading {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #333;
+    cursor: pointer;
+  }
+  
+  .faq .accordion-container .accordion .accordion-heading h3 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .faq .accordion-container .accordion .accordion-heading i {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .faq .accordion-container .accordioin-content {
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+    display: none;
+    -webkit-animation: fadeIn .2s linear;
+            animation: fadeIn .2s linear;
+  }
+
+  .review .slide {
+    width: 35rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #333;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    background: #fff;
+  }
+  
+  .review .slide img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+  }
+  
+  .review .slide h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .review .slide span {
+    color: #0984e3;
+    font-size: 1.7rem;
+  }
+  
+  .review .slide p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+    padding-top: 1rem;
+  }
+
   .quick-links {
   display: -webkit-box;
   display: -ms-flexbox;
