@@ -747,6 +747,172 @@ body {
     font-size: 2rem;
     color: #333;
   }
+
+  .info-container .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .info-container .box-container .box {
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2rem;
+    border: 0.2rem solid #333;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-container .box-container .box i {
+    height: 7.5rem;
+    width: 7.5rem;
+    line-height: 7.5rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    background: pink;
+    color: #fff;
+  }
+  
+  .info-container .box-container .box h3 {
+    font-size: 2rem;
+    padding: .5rem 0;
+    color: #333;
+  }
+  
+  .info-container .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #666;
+  }
+  
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  
+  .contact form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+  }
+  
+  .contact form h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #333;
+    padding-bottom: 1rem;
+  }
+  
+  .contact form p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+  
+  .contact form .inputBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .contact form .inputBox input {
+    width: 49%;
+  }
+  
+  .contact form .inputBox input, .contact form textarea {
+    padding: 1.2rem 1.4rem;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border: 0.2rem solid #333;
+    background: #fff;
+    text-transform: none;
+    color: #666;
+    font-size: 1.5rem;
+    margin: .7rem 0;
+  }
+  
+  .contact form textarea {
+    height: 15rem;
+    resize: none;
+    width: 100%;
+  }
+  
+  .contact .map {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    width: 100%;
+  }
+  
+  .newsletter {
+    background: pink;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .newsletter .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+  }
+  
+  .newsletter .content h3 {
+    font-size: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .newsletter .content p {
+    font-size: 2.2rem;
+    color: #fff;
+  }
+  
+  .newsletter form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5rem;
+    border-radius: .5rem;
+  }
+  
+  .newsletter form .email {
+    width: 100%;
+    padding: 0 1.4rem;
+    text-transform: none;
+    color: #666;
+    font-size: 1.6rem;
+  }
+  
+  .newsletter form .btn {
+    margin-top: 0;
+  }
   
 
 .quick-links .logo {
