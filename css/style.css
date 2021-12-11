@@ -566,6 +566,189 @@ body {
           justify-content: space-between;
 }
 
+.category .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .category .box-container .box {
+    text-align: center;
+    border-radius: .5rem;
+    border: 0.2rem solid #333;
+    padding: 2rem;
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .category .box-container .box:hover {
+    background: #333;
+  }
+  
+  .category .box-container .box:hover h3 {
+    color: #fff;
+  }
+  
+  .category .box-container .box img {
+    height: 8rem;
+    margin-bottom: .5rem;
+  }
+  
+  .category .box-container .box h3 {
+    font-size: 1.7rem;
+    color: #333;
+  }
+
+  .products .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .products .box-container .box {
+    border: 0.2rem solid #333;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    overflow: hidden;
+  }
+  
+  .products .box-container .box:hover .image .hover-img {
+    display: inline-block;
+  }
+  
+  .products .box-container .box:hover .image .main-img {
+    display: none;
+  }
+  
+  .products .box-container .box:hover .image .icons {
+    left: 1rem;
+  }
+  
+  .products .box-container .box .image {
+    position: relative;
+  }
+  
+  .products .box-container .box .image img {
+    height: 30rem;
+    -webkit-animation: fadeIn .2s linear;
+            animation: fadeIn .2s linear;
+  }
+  
+  .products .box-container .box .image .hover-img {
+    display: none;
+  }
+  
+  .products .box-container .box .image .icons {
+    position: absolute;
+    top: 0;
+    left: -7rem;
+  }
+  
+  .products .box-container .box .image .icons a {
+    display: block;
+    margin-top: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #333;
+  }
+  
+  .products .box-container .box .image .icons a:hover {
+    background: pink;
+  }
+  
+  .products .box-container .box .content {
+    padding: 2rem;
+  }
+  
+  .products .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .products .box-container .box .content .price {
+    font-size: 2.2rem;
+    color: pink;
+    padding-bottom: .7rem;
+    padding-top: .5rem;
+  }
+  
+  .products .box-container .box .content .price span {
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+  }
+  
+  .products .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: purple;
+  }
+  
+  .product-banner .box-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .product-banner .box-container .box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    position: relative;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    border: 0.2rem solid #333;
+    overflow: hidden;
+    height: 30rem;
+  }
+  
+  .product-banner .box-container .box:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .product-banner .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .product-banner .box-container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .product-banner .box-container .box .content span {
+    font-size: 1.7rem;
+    color: pink;
+  }
+  
+  .product-banner .box-container .box .content h3 {
+    padding-top: .5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+
 .quick-links .logo {
   font-size: 2.5rem;
   color: #fff;
