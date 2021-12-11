@@ -257,6 +257,55 @@ body {
     color: #333;
   }
 
+  .banner .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .banner .box-container .box {
+    position: relative;
+    height: 25rem;
+    border: 0.2rem solid #333;
+    border-radius: .5rem;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .banner .box-container .box:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .banner .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .banner .box-container .box .content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .banner .box-container .box .content span {
+    font-size: 1.7rem;
+    color: pink;
+  }
+  
+  .banner .box-container .box .content h3 {
+    font-size: 2rem;
+    padding: .5rem 0;
+    color: #333;
+  }
+
   .quick-links {
   display: -webkit-box;
   display: -ms-flexbox;
