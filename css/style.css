@@ -306,6 +306,71 @@ body {
     color: #333;
   }
 
+  .arrivals .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(33rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .arrivals .box-container .box {
+    border-radius: .5rem;
+    border: 0.2rem solid #333;
+    padding: 2rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    background: #fff;
+  }
+  
+  .arrivals .box-container .box:hover .image .main-img {
+    display: none;
+  }
+  
+  .arrivals .box-container .box:hover .image .hover-img {
+    display: inline-block;
+  }
+  
+  .arrivals .box-container .box .image img {
+    height: 15rem;
+    -webkit-animation: fadeIn .2s linear;
+            animation: fadeIn .2s linear;
+  }
+  
+  .arrivals .box-container .box .image .hover-img {
+    display: none;
+  }
+  
+  .arrivals .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .arrivals .box-container .box .content .price {
+    padding-top: .5erm;
+    font-size: 2rem;
+    color: pink;
+    padding-bottom: .7rem;
+  }
+  
+  .arrivals .box-container .box .content .price span {
+    font-size: 1.5rem;
+    color: #666;
+    text-decoration: line-through;
+  }
+  
+  .arrivals .box-container .box .content .stars i {
+    font-size: 1.5rem;
+    color: purple;
+  }
+
   .quick-links {
   display: -webkit-box;
   display: -ms-flexbox;
