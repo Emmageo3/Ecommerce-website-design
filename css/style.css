@@ -194,6 +194,69 @@ body {
     padding-right: .5rem;
   }
 
+  .home {
+    background: #fff;
+  }
+  
+  .home .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 40rem;
+    padding: 2rem 0;
+  }
+  
+  .home .slide .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+    text-align: center;
+  }
+  
+  .home .slide .image img {
+    height: 30rem;
+  }
+  
+  .home .slide .content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+  }
+  
+  .home .slide .content span {
+    font-size: 2rem;
+    color: pink;
+  }
+  
+  .home .slide .content h3 {
+    padding-top: .5rem;
+    color: #333;
+    font-size: 3rem;
+  }
+
+  .home .slide .content .btn{
+      margin-top: 1rem;
+      display: inline-block;
+      border-radius: .5rem;
+      padding: 1rem 3rem;
+      font-size: 1.7rem;
+      color: white;
+      cursor: pointer;
+      background-color: purple;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 3rem;
+    color: #333;
+  }
+
   .quick-links {
   display: -webkit-box;
   display: -ms-flexbox;
